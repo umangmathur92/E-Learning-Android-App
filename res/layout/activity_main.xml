@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity" >
+
+
+
+    <TableLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5sp"
+        android:layout_below="@+id/linearLayout1" >
+           <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_weight="1"
+             android:paddingTop="5sp"
+                          android:paddingBottom="5sp"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+         >
+
+           <TextView
+        android:id="@+id/textView1"
+                        android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+               
+                android:layout_weight="1"
+                android:background="#8e0000"
+    android:gravity="center"
+    android:textColor="#FFFFFF"
+        android:textSize="30sp"
+                   
+        
+        android:text="LOGIN SCREEN" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_weight="2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+                        android:padding="5sp"
+            
+         >
+
+            <ImageView
+            android:id="@+id/imageView1"
+                            android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                
+                android:layout_weight="1"
+            android:src="@drawable/a2" />
+        </TableRow>
+       
+
+   
+
+
+
+     
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10sp"
+         >
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFF"
+                android:layout_weight="1"
+                  
+                android:hint="User Name ..."
+                android:inputType="textPersonName" >
+	
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_weight="1"
+                        android:padding="10sp"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="#FFF"
+                 
+                android:hint="Password ..."
+                android:inputType="textPassword" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_weight="1"
+                        android:padding="10sp"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                    style="@style/btnStyleShakespeare"
+                              
+                android:onClick="openthis"
+                android:text="Sign In" />
+    		
+        </TableRow>
+        
+    </TableLayout>
+
+    
+
+</RelativeLayout>
