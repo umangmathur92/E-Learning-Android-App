@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
 		//Toast.makeText(getApplicationContext(), "exception",Toast.LENGTH_LONG).show();
 		
 		Intent i = new Intent(this, TaskActivity.class);
+		//jjjjmmjnnhnh
 		startActivity(i);
 	}
 }
