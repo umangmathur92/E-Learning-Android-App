@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 	{
 		//Toast.makeText(getApplicationContext(), "exception",Toast.LENGTH_LONG).show();
 		
-		Intent intent = new Intent(this, TaskActivity.class);
-		startActivity(intent);
+		Intent i = new Intent(this, TaskActivity.class);
+		startActivity(i);
 	}
 }

@@ -4,11 +4,7 @@ package com.example.e_learningdemo;
 import java.util.ArrayList;
 
 import android.app.ListActivity;
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,7 +13,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class TaskActivity extends ListActivity {
-    private static final String DB_NAME = "umangdb.db";
     
 	
 	private ListView listView;
