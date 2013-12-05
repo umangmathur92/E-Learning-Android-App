@@ -29,6 +29,7 @@
                 <activity android:name="NotificationActivity"></activity>
                         <activity android:name="TestActivity"></activity>
                                       <activity android:name="TestScoreActivity"></activity>
+                                      <activity android:name="OpenWebAppActivity"></activity>
     </application>
 
 </manifest>

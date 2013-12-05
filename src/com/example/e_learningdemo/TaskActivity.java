@@ -2,7 +2,6 @@ package com.example.e_learningdemo;
 
 
 import java.util.ArrayList;
-
 import android.app.ListActivity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -54,9 +53,9 @@ public class TaskActivity extends ListActivity {
 					
 					if (x.equalsIgnoreCase("Open Web Application")) 
 					   {
-						   //Toast.makeText(getApplicationContext(),"Hey", Toast.LENGTH_SHORT).show();
-						   Intent i = new Intent(TaskActivity.this, StatActivity.class);
-						   startActivity(i);
+						Intent intent = new Intent(TaskActivity.this, OpenWebAppActivity.class);
+						intent.putExtra("myurl", "http://google.co.in/");
+						startActivity(intent);
 					   } 
 					if (x.equalsIgnoreCase("View Statistics")) 
 					   {
@@ -97,6 +96,7 @@ public class TaskActivity extends ListActivity {
 		});
 		
 	}
+	
 	
 	
 	private void fillProgramList() {
