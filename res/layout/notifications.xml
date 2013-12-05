@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_margin="5sp" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="5sp"
+            android:paddingTop="5sp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#8e0000"
+                android:gravity="center"
+                android:text="NOTIFICATIONS"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="30sp"
+        android:layout_below="@+id/tableLayout1"
+        android:text="Notification 1"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="24dp"
+        android:text="Notification 2"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="25dp"
+        android:text="Notification 3"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="19dp"
+        android:text="Notification 4"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView03"
+        android:layout_marginTop="28dp"
+        android:text="Notification 5"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+</RelativeLayout>

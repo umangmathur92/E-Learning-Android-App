@@ -14,7 +14,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.demoapplication.MainActivity"
+            
+            android:name="com.example.e_learningdemo.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +23,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-                <activity android:name="TaskActivity"></activity>
-        
+         <activity android:name="TaskActivity"></activity>
+        <activity android:name="StatActivity"></activity>
+        <activity android:name="EditProfileActivity"></activity>
+                <activity android:name="NotificationActivity"></activity>
+                        <activity android:name="TestActivity"></activity>
+                                      <activity android:name="TestScoreActivity"></activity>
     </application>
 
 </manifest>

@@ -4,6 +4,7 @@ package com.example.e_learningdemo;
 import java.util.ArrayList;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class TaskActivity extends ListActivity {
     
@@ -18,6 +20,7 @@ public class TaskActivity extends ListActivity {
 	private ListView listView;
 	private ArrayList<String> programlist;
 	public long q;
+	protected int flag;
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,10 +48,54 @@ public class TaskActivity extends ListActivity {
 		listView.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view,
 								int position,long id) {
-				
-				 
+
+				 String x=(String) listView.getItemAtPosition(position);
+					Toast.makeText(getApplicationContext(), x,Toast.LENGTH_LONG).show();
+					
+					if (x.equalsIgnoreCase("Open Web Application")) 
+					   {
+						   //Toast.makeText(getApplicationContext(),"Hey", Toast.LENGTH_SHORT).show();
+						   Intent i = new Intent(TaskActivity.this, StatActivity.class);
+						   startActivity(i);
+					   } 
+					if (x.equalsIgnoreCase("View Statistics")) 
+					   {
+						   //Toast.makeText(getApplicationContext(),"Hey", Toast.LENGTH_SHORT).show();
+						   Intent i = new Intent(TaskActivity.this, StatActivity.class);
+						   startActivity(i);
+					   } 
+
+					if (x.equalsIgnoreCase("Test Scores")) 
+					   {
+						   //Toast.makeText(getApplicationContext(),"Hey", Toast.LENGTH_SHORT).show();
+						   Intent i = new Intent(TaskActivity.this, TestScoreActivity.class);
+						   startActivity(i);
+					   } 
+
+					if (x.equalsIgnoreCase("Tests")) 
+					   {
+						   //Toast.makeText(getApplicationContext(),"Hey", Toast.LENGTH_SHORT).show();
+						   Intent i = new Intent(TaskActivity.this, TestActivity.class);
+						   startActivity(i);
+					   } 
+
+					if (x.equalsIgnoreCase("Notifications")) 
+					   {
+						   //Toast.makeText(getApplicationContext(),"Hey", Toast.LENGTH_SHORT).show();
+						   Intent i = new Intent(TaskActivity.this, NotificationActivity.class);
+						   startActivity(i);
+					   } 
+
+					if (x.equalsIgnoreCase("Edit Profile")) 
+					   {
+						   //Toast.makeText(getApplicationContext(),"Hey", Toast.LENGTH_SHORT).show();
+						   Intent i = new Intent(TaskActivity.this, EditProfileActivity.class);
+						   startActivity(i);
+					   } 
+
 			}
 		});
+		
 	}
 	
 	
@@ -56,7 +103,7 @@ public class TaskActivity extends ListActivity {
 		programlist = new ArrayList<String>();
 				programlist.add("Test Scores");
 				programlist.add("Tests");
-
+				programlist.add("Notifications");
 				programlist.add("View Statistics");
 				programlist.add("Edit Profile");
 				programlist.add("Open Web Application");
