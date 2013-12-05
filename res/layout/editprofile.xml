@@ -168,7 +168,6 @@
                                 android:layout_weight="1"
                     style="@style/btnStyleShakespeare"
                               
-                android:onClick="openthis"
                 android:text="Update Profile" />
     		
         </TableRow>
